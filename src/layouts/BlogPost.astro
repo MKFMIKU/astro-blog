@@ -470,6 +470,141 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			animation-range: entry 8% cover 32%;
 		}
 	}
+	.prose :global(.creative-surface-diagram) {
+		width: calc(100% + min(20vw, 15rem));
+		margin: 4rem 0 4.5rem calc(min(10vw, 7.5rem) * -1);
+		padding: clamp(1.25rem, 2.6vw, 2.25rem);
+		border-top: 1px solid var(--ink);
+		border-bottom: 1px solid var(--line);
+		font-family: "Atkinson", sans-serif;
+	}
+	.prose :global(.diagram-kicker) {
+		margin-bottom: 1rem;
+		color: var(--signal);
+		font-size: 0.66rem;
+		font-weight: 700;
+		letter-spacing: 0.11em;
+		text-transform: uppercase;
+	}
+	.prose :global(.creative-system) {
+		display: grid;
+		grid-template-columns: minmax(8rem, 1fr) minmax(3rem, 0.55fr) minmax(9rem, 1.1fr) minmax(3rem, 0.55fr) minmax(8rem, 1fr);
+		grid-template-rows: 1fr auto;
+		align-items: center;
+		min-width: 43rem;
+		padding: 1rem 0 0;
+	}
+	.prose :global(.system-column) {
+		display: grid;
+		gap: 0.7rem;
+	}
+	.prose :global(.column-label) {
+		margin-bottom: 0.25rem;
+		color: var(--ink-soft);
+		font-size: 0.62rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.prose :global(.system-node) {
+		padding: 0.65rem 0.75rem;
+		border: 1px solid var(--line);
+		font-size: 0.83rem;
+		font-weight: 700;
+	}
+	.prose :global(.system-flow) {
+		display: grid;
+		gap: 2.55rem;
+		padding-top: 1.8rem;
+	}
+	.prose :global(.system-flow i) {
+		position: relative;
+		display: block;
+		height: 1px;
+		overflow: visible;
+		background: repeating-linear-gradient(90deg, var(--signal) 0 4px, transparent 4px 9px);
+		background-size: 18px 1px;
+		animation: line-travel 1.8s linear infinite;
+	}
+	.prose :global(.system-flow i::after) {
+		position: absolute;
+		top: -3px;
+		right: 0;
+		width: 6px;
+		height: 6px;
+		transform: rotate(45deg);
+		border-top: 1px solid var(--signal);
+		border-right: 1px solid var(--signal);
+		content: "";
+	}
+	.prose :global(.identity-core) {
+		position: relative;
+		display: grid;
+		aspect-ratio: 1;
+		place-content: center;
+		border: 1px solid var(--ink);
+		border-radius: 50%;
+		text-align: center;
+	}
+	.prose :global(.identity-core::before) {
+		position: absolute;
+		inset: 11%;
+		border: 1px dashed var(--signal);
+		border-radius: inherit;
+		content: "";
+		animation: orbit-turn 18s linear infinite;
+	}
+	.prose :global(.identity-core span) {
+		position: relative;
+		z-index: 1;
+		color: var(--signal);
+		font-size: 0.55rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+	.prose :global(.identity-core strong) {
+		position: relative;
+		z-index: 1;
+		font-size: clamp(1rem, 2vw, 1.45rem);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		line-height: 1;
+	}
+	.prose :global(.community-loop) {
+		position: relative;
+		grid-column: 1 / -1;
+		margin: 2rem 7% 0;
+		padding-top: 1rem;
+		border-top: 1px solid var(--ink-soft);
+		color: var(--ink-soft);
+		font-size: 0.56rem;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prose :global(.community-loop::before) {
+		position: absolute;
+		top: -4px;
+		left: -1px;
+		width: 7px;
+		height: 7px;
+		transform: rotate(-135deg);
+		border-top: 1px solid var(--signal);
+		border-right: 1px solid var(--signal);
+		content: "";
+	}
+	.prose :global(.creative-surface-diagram figcaption) {
+		max-width: 42rem;
+		margin-top: 1.25rem;
+		color: var(--ink-soft);
+		font-size: 0.74rem;
+		line-height: 1.5;
+	}
+	.prose :global(.creative-surface-diagram figcaption strong) { color: var(--ink); }
+	@keyframes line-travel { to { background-position: 18px 0; } }
 	.prose :global(.miku-context-grid) {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -691,6 +826,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			width: 100%;
 			margin-left: 0;
 		}
+		.prose :global(.creative-surface-diagram) {
+			width: 100%;
+			margin-left: 0;
+		}
 		.prose :global(.evolution-track) {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 2rem 1rem;
@@ -740,13 +879,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			font-size: 0.48rem;
 			letter-spacing: 0;
 		}
+		.prose :global(.creative-surface-diagram) {
+			padding: 1rem 0;
+			overflow-x: auto;
+		}
+		.prose :global(.creative-system) {
+			min-width: 42rem;
+		}
 	}
 	@media (prefers-reduced-motion: reduce) {
 		.prose :global(.evolution-stage),
 		.prose :global(.capability-line i.on),
 		.prose :global(.evolution-arrow span::before),
 		.prose :global(.future-orbit),
-		.prose :global(.future-portrait::before) {
+		.prose :global(.future-portrait::before),
+		.prose :global(.system-flow i),
+		.prose :global(.identity-core::before) {
 			animation: none;
 		}
 	}

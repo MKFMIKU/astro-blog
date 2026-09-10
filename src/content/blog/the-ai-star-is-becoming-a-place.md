@@ -132,9 +132,30 @@ The scale of that culture is not metaphorical. An official concert recording of 
   <figcaption><a href="https://www.youtube.com/watch?v=jhl5afLEKdo">Hatsune Miku — “World is Mine” by ryo (supercell)</a>. Official concert recording; more than 24 million YouTube views as of September 2026.</figcaption>
 </figure>
 
-![An original virtual singer assembled from the music, drawings, movement, and affection of a distributed creative community.](/ai-star-community.webp)
-
-*A virtual star can be a shared creative surface. Illustration generated for this essay.*
+<figure class="creative-surface-diagram">
+  <div class="diagram-kicker">Participatory media system</div>
+  <div class="creative-system" role="img" aria-label="Musicians, illustrators, animators, and fans contribute through a stable virtual identity. Songs, images, performances, and remixes circulate back through the community.">
+    <div class="system-column contributors">
+      <span class="column-label">Contributors</span>
+      <span class="system-node">Musicians</span>
+      <span class="system-node">Illustrators</span>
+      <span class="system-node">Animators</span>
+      <span class="system-node">Fans</span>
+    </div>
+    <div class="system-flow flow-in" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="identity-core"><span>Stable</span><strong>Virtual<br />identity</strong></div>
+    <div class="system-flow flow-out" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="system-column culture">
+      <span class="column-label">Shared culture</span>
+      <span class="system-node">Songs</span>
+      <span class="system-node">Images</span>
+      <span class="system-node">Performances</span>
+      <span class="system-node">Remixes</span>
+    </div>
+    <div class="community-loop"><span>Circulation creates more participation</span></div>
+  </div>
+  <figcaption><strong>The character is the protocol, not the sole author.</strong> A stable identity coordinates many independent contributions; the culture they produce draws more people back into creation.</figcaption>
+</figure>
 
 Traditional celebrities also depend on fan culture, but the balance is different. A fan can interpret a human performer; a Miku producer can author the performance itself. The distance between audience and creator becomes porous. The star is simultaneously the result of participation and the reason people participate.
 
