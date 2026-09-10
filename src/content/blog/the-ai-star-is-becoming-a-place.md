@@ -9,13 +9,66 @@ For most of the last century, a star was a person at a distance. We watched them
 
 AI is beginning to change that structure. A virtual star can now sing, speak, appear in an endless stream of scenes, remember a conversation, and respond differently to every person. The next step is not simply a more realistic digital celebrity. It is a new kind of social entity: part character, part creative platform, and part world.
 
+## Before virtual stars: the human star system
+
+Modern celebrity was built by technologies that let one person appear to millions. Charlie Chaplin became one of cinema’s first globally recognizable figures without needing a shared spoken language. Television turned Michael Jackson’s performances into synchronized worldwide events; social platforms gave Taylor Swift a continuous channel to her audience; and stars such as Xiao Zhan and BLACKPINK demonstrate how celebrity now travels through vast, multilingual digital communities.
+
+<div class="human-star-lineup">
+  <figure>
+    <img src="/charlie-chaplin-1921.jpg" alt="A 1921 black-and-white studio portrait of Charlie Chaplin." />
+    <figcaption><strong>Charlie Chaplin</strong><span>Film</span><a href="https://commons.wikimedia.org/wiki/File:Charlie_Chaplin_portrait.jpg">Strauss-Peyton Studio, 1921 · Public domain</a></figcaption>
+  </figure>
+  <figure>
+    <img src="/michael-jackson-1988.jpg" alt="Michael Jackson performing onstage in Vienna in 1988." />
+    <figcaption><strong>Michael Jackson</strong><span>Television</span><a href="https://commons.wikimedia.org/wiki/File:Michael_Jackson1_1988.jpg">Zoran Veselinovic, 1988 · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure>
+    <img src="/taylor-swift-2011.jpg" alt="Taylor Swift appearing at YouTube Presents in 2011." />
+    <figcaption><strong>Taylor Swift</strong><span>Social media</span><a href="https://commons.wikimedia.org/wiki/File:Taylor_Swift_4,_2011.jpg">Marcin Wichary, 2011 · CC BY 2.0</a></figcaption>
+  </figure>
+  <figure>
+    <img src="/xiao-zhan-2020.jpg" alt="Chinese actor and singer Xiao Zhan at the Weibo Night Gala in 2020." />
+    <figcaption><strong>Xiao Zhan</strong><span>Platform fandom</span><a href="https://commons.wikimedia.org/wiki/File:Xiao_Zhan_at_the_Weibo_Night_Ceremony_January_11_2020.jpg">Pobediti, 2020 · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  <figure>
+    <img src="/blackpink-2017.jpg" alt="The four members of BLACKPINK performing in 2017." />
+    <figcaption><strong>BLACKPINK</strong><span>Global fandom</span><a href="https://commons.wikimedia.org/wiki/File:Blackpink.jpg">HeyDay, 2017 · CC BY 4.0</a></figcaption>
+  </figure>
+</div>
+
+Across these eras, the medium changed but the star remained a scarce human source. Studios, labels, and platforms could reproduce an image endlessly, yet the canonical voice, body, and biography still belonged to one person. Fans formed communities, styles, and identities around that center, but they generally interpreted the performance rather than generating the star’s performance themselves.
+
 Hatsune Miku is one of the clearest places to begin because she showed that a virtual star does not need an ordinary biography—or even a single author—to feel culturally alive.
 
-## Hatsune Miku: a star made by her audience
+## Hatsune Miku: the first global virtual star
 
-Hatsune Miku began as singing-voice software released by Crypton Future Media in 2007. Yet describing her only as software misses what followed. Producers wrote songs for her voice. Illustrators redrew her. Animators gave her movement. Fans remixed, translated, choreographed, performed, and circulated each other’s work. Crypton now describes her as a “collaboratively constructed cyber celebrity” and a hub for a worldwide creative community.
+For readers encountering her for the first time, **Hatsune Miku is both a singing-voice synthesizer and the turquoise-haired virtual performer created to represent that voice**: musicians enter melodies and lyrics into software, then use her synthesized voice to make songs.
+
+<div class="miku-context-grid">
+  <figure class="miku-character">
+    <img src="/hatsune-miku-nt-official.png" alt="Crypton Future Media's complete transparent-background illustration of Hatsune Miku NT, with long turquoise twin-tail hair and a white, black, and teal outfit." />
+    <figcaption>Hatsune Miku NT. Official image: <a href="https://ec.crypton.co.jp/pages/prod/virtualsinger/mikunt">Crypton Future Media</a>. Art by iXima; concept by iXima and CFM; NT design by iXima and Rella.</figcaption>
+  </figure>
+  <figure class="miku-software">
+    <img src="/hatsune-miku-vocaloid2-editor.png" alt="The VOCALOID2 Editor interface showing a piano roll, lyrics, notes, and voice parameters used to synthesize Hatsune Miku's singing." />
+    <figcaption>The VOCALOID2 Editor turns typed lyrics and notes on a piano roll into a vocal performance. Screenshot: <a href="https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01#cont_ps">Crypton Future Media</a>.</figcaption>
+  </figure>
+</div>
+
+Miku began as singing-voice software released by Crypton Future Media in 2007. Yet describing her only as software misses what followed. Producers wrote songs for her voice. Illustrators redrew her. Animators gave her movement. Fans remixed, translated, choreographed, performed, and circulated each other’s work. Crypton now describes her as a “collaboratively constructed cyber celebrity” and a hub for a worldwide creative community.
 
 That word—**hub**—matters. Miku did not become important because a company completed her character and delivered it to a passive audience. She became important because she was incomplete in a productive way. Her recognizable voice and visual identity created continuity, while the community supplied an expanding universe of moods, stories, genres, and meanings.
+
+The scale of that culture is not metaphorical. An official concert recording of Miku performing ryo’s “World is Mine” has been watched more than **24 million times** on YouTube. The crowd’s glow sticks, chants, and attention look like the familiar rituals of pop stardom—even though the performer at their center is a projected virtual character and the song originated with a member of her creative community.
+
+<figure class="miku-concert">
+  <a class="video-link-card" href="https://www.youtube.com/watch?v=jhl5afLEKdo" aria-label="Watch Hatsune Miku perform World is Mine on YouTube">
+    <img src="/miku-world-is-mine-concert.jpg" alt="Hatsune Miku performing World is Mine on a concert stage before a large audience." />
+    <span class="play-button" aria-hidden="true">▶</span>
+    <span class="watch-label">Watch on YouTube</span>
+  </a>
+  <figcaption><a href="https://www.youtube.com/watch?v=jhl5afLEKdo">Hatsune Miku — “World is Mine” by ryo (supercell)</a>. Official concert recording; more than 24 million YouTube views as of September 2026.</figcaption>
+</figure>
 
 ![An original virtual singer assembled from the music, drawings, movement, and affection of a distributed creative community.](/ai-star-community.webp)
 
@@ -30,6 +83,25 @@ This is the first important lesson for AI characters: **participation can be mor
 Voice synthesis gave virtual characters a performable voice. Modern generative models add bodies, environments, cinematography, motion, dialogue, and sound.
 
 Current video systems can produce scenes from text and images, maintain more control over characters and objects, and generate synchronized audio. Google DeepMind describes Veo as supporting text-to-video, image-to-video, and audio-video generation, while OpenAI describes Sora as accepting text, image, and video inputs for new video outputs. These are still imperfect tools: identity can drift, physical events can break, and long narrative continuity remains difficult. But the direction is clear. The cost of placing a character inside a convincing scene is collapsing.
+
+### Yuri: a star rendered before she can relate
+
+**Yuri (尤栗)** offers a clearer starting point. Introduced by the Chinese studio AI.TALK in 2025 as an “AI-native singer,” she entered public view through *SURREAL*: a music video whose voice, music, appearance, movement, and scenes were produced through a human-directed generative workflow. She has no filmed human counterpart. The model gives her a face, a voice, a camera, costumes, locations, and the beginnings of a recognizable aesthetic identity.
+
+<figure class="yuri-case-media">
+  <a class="video-link-card" href="https://www.youtube.com/watch?v=KHSr80Rnm9k" aria-label="Watch Yuri perform SURREAL on YouTube">
+    <img src="/yuri-surreal-youtube.jpg" alt="Cover image for Yuri's AI-generated SURREAL music video." />
+    <span class="play-button" aria-hidden="true">▶</span>
+    <span class="watch-label">Watch on YouTube</span>
+  </a>
+  <figcaption><a href="https://www.youtube.com/watch?v=KHSr80Rnm9k">YURI — SURREAL</a>, AI.TALK’s AI-generated debut music video.</figcaption>
+</figure>
+
+Yuri demonstrates what video models add to synthetic stardom. A character no longer needs to remain a voice attached to a fixed illustration or a manually rigged 3D body. She can appear in a succession of cinematic worlds, and those worlds can supply mood, gesture, fashion, and visual memory. Viewers can already project feeling onto her and be moved by the resulting work.
+
+But this is only the **first layer of an AI star**. Yuri’s published performances are selected, edited, and released by a human team. She does not independently notice a fan, remember a shared encounter, revise her own values, or decide what relationship she wants to sustain. The audience can feel something *toward* the generated character, but the character cannot yet carry an enduring emotional relationship *back* toward the audience.
+
+That gap defines the roadmap. Video generation supplies embodiment: the visible person and the world around her. A future human world model would also need persistent memory, social understanding, agency, a continuous self-model, and the ability to participate in relationships over time. Whether that amounts to consciousness is a much harder question. But without at least functional continuity—remembering, interpreting, choosing, and changing—the generated star remains a compelling performance rather than a social being.
 
 That changes the unit of creativity. A song once invited a music video. A prompt can now invite a room, a season, a camera language, and a cast. Instead of publishing one canonical appearance, creators can continuously generate contexts for a character: a quiet train ride, a live concert on another planet, a cooking show, a game, or a private conversation.
 
@@ -100,5 +172,7 @@ If they can, the AI star will no longer sit at the center of the stage. It will 
 ### Further reading
 
 - [Crypton Future Media: About Hatsune Miku](https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us)
+- [AI.TALK: Yuri / 尤栗](https://ai-talk.ai/yuri)
+- [AI.TALK: SURREAL](https://ai-talk.ai/works/surreal)
 - [Google DeepMind: Veo](https://deepmind.google/models/veo/)
 - [OpenAI: Sora system card](https://openai.com/index/sora-system-card/)

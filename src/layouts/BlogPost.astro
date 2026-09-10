@@ -212,6 +212,187 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		font-style: normal;
 		line-height: 1.45;
 	}
+	.prose :global(.miku-context-grid) {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: start;
+		gap: clamp(1.25rem, 3vw, 2.75rem);
+		width: calc(100% + min(16vw, 12rem));
+		margin: 3.25rem 0 4rem calc(min(8vw, 6rem) * -1);
+		padding: clamp(1.25rem, 3vw, 2.5rem);
+		background: #e9e9e3;
+	}
+	.prose :global(.miku-context-grid figure) {
+		display: grid;
+		grid-template-rows: clamp(26rem, 38vw, 36rem) auto;
+		margin: 0;
+	}
+	.prose :global(.miku-context-grid img) {
+		display: block;
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		margin: 0 0 1rem;
+		object-fit: contain;
+		object-position: center center;
+	}
+	.prose :global(.miku-character img) {
+		width: 80%;
+		max-height: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.prose :global(.miku-software img) {
+		width: 100%;
+		image-rendering: auto;
+	}
+	.prose :global(.miku-context-grid figcaption) {
+		color: var(--ink-soft);
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+	.prose :global(.miku-context-grid figcaption a) {
+		color: inherit;
+	}
+	.prose :global(.archive-figure) {
+		width: min(100%, 34rem);
+		margin: 3rem auto 4rem;
+	}
+	.prose :global(.archive-figure img) {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 0 1rem;
+	}
+	.prose :global(.archive-figure figcaption) {
+		color: var(--ink-soft);
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+	.prose :global(.archive-figure figcaption a) {
+		color: inherit;
+	}
+	.prose :global(.human-star-lineup) {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 0.65rem;
+		width: calc(100% + min(24vw, 18rem));
+		margin: 3rem 0 4rem calc(min(12vw, 9rem) * -1);
+	}
+	.prose :global(.human-star-lineup figure) {
+		margin: 0;
+	}
+	.prose :global(.human-star-lineup img) {
+		display: block;
+		width: 100%;
+		aspect-ratio: 3 / 4;
+		margin: 0 0 0.85rem;
+		object-fit: cover;
+		object-position: center top;
+	}
+	.prose :global(.human-star-lineup figcaption) {
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.68rem;
+		line-height: 1.35;
+	}
+	.prose :global(.human-star-lineup strong),
+	.prose :global(.human-star-lineup span),
+	.prose :global(.human-star-lineup figcaption a) {
+		display: block;
+	}
+	.prose :global(.human-star-lineup strong) {
+		color: var(--ink);
+		font-size: 0.8rem;
+	}
+	.prose :global(.human-star-lineup span) {
+		margin: 0.12rem 0 0.5rem;
+		color: var(--signal);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	.prose :global(.human-star-lineup figcaption a) {
+		color: var(--ink-soft);
+	}
+	.prose :global(.yuri-case-media) {
+		width: calc(100% + min(16vw, 12rem));
+		margin: 3.25rem 0 4rem calc(min(8vw, 6rem) * -1);
+	}
+	.prose :global(.yuri-case-media figcaption) {
+		color: var(--ink-soft);
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+	.prose :global(.yuri-case-media figcaption a) {
+		color: inherit;
+	}
+	.prose :global(.miku-concert) {
+		width: calc(100% + min(12vw, 9rem));
+		margin: 3.25rem 0 4rem calc(min(6vw, 4.5rem) * -1);
+	}
+	.prose :global(.miku-concert .video-link-card),
+	.prose :global(.yuri-case-media .video-link-card) {
+		position: relative;
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
+		background: #111;
+	}
+	.prose :global(.miku-concert .video-link-card img),
+	.prose :global(.yuri-case-media .video-link-card img) {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		object-fit: cover;
+		transition: transform 220ms ease, filter 220ms ease;
+	}
+	.prose :global(.miku-concert .video-link-card:hover img),
+	.prose :global(.yuri-case-media .video-link-card:hover img) {
+		transform: scale(1.015);
+		filter: brightness(0.82);
+	}
+	.prose :global(.miku-concert .play-button),
+	.prose :global(.yuri-case-media .play-button) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: grid;
+		width: 4.5rem;
+		height: 4.5rem;
+		place-items: center;
+		padding-left: 0.25rem;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		background: rgba(244, 244, 239, 0.94);
+		color: var(--ink);
+		font-family: "Atkinson", sans-serif;
+		font-size: 1.35rem;
+	}
+	.prose :global(.miku-concert .watch-label),
+	.prose :global(.yuri-case-media .watch-label) {
+		position: absolute;
+		right: 1rem;
+		bottom: 1rem;
+		padding: 0.55rem 0.75rem;
+		background: rgba(15, 15, 14, 0.84);
+		color: #fff;
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.72rem;
+		letter-spacing: 0.04em;
+	}
+	.prose :global(.miku-concert figcaption) {
+		margin-top: 0.85rem;
+		color: var(--ink-soft);
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+	.prose :global(.miku-concert figcaption a) {
+		color: inherit;
+	}
 	.prose :global(a) {
 		text-decoration-color: var(--signal);
 	}
@@ -230,6 +411,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			width: 100%;
 			margin-left: 0;
 		}
+		.prose :global(.miku-context-grid) {
+			width: 100%;
+			margin-left: 0;
+		}
+		.prose :global(.human-star-lineup) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.5rem 0.75rem;
+			width: 100%;
+			margin-left: 0;
+		}
+		.prose :global(.yuri-case-media) {
+			width: 100%;
+			margin-left: 0;
+		}
+		.prose :global(.miku-concert) {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 	@media (max-width: 600px) {
 		.article-header h1 {
@@ -237,6 +436,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		}
 		.article-byline {
 			gap: 1.5rem 2.5rem;
+		}
+		.prose :global(.miku-context-grid) {
+			grid-template-columns: 1fr;
+		}
+		.prose :global(.miku-character img) {
+			width: 80%;
+			max-height: none;
+		}
+		.prose :global(.miku-context-grid figure) {
+			grid-template-rows: auto auto;
+		}
+		.prose :global(.miku-context-grid img) {
+			height: auto;
+			max-height: 30rem;
 		}
 	}
 </style>
