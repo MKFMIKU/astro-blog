@@ -212,6 +212,264 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		font-style: normal;
 		line-height: 1.45;
 	}
+	.prose :global(.star-evolution) {
+		--diagram-ink: #171916;
+		--diagram-paper: #e9e9e3;
+		--diagram-line: rgba(23, 25, 22, 0.2);
+		width: calc(100% + min(28vw, 21rem));
+		margin: 4.5rem 0 6rem calc(min(14vw, 10.5rem) * -1);
+		padding: clamp(1.4rem, 3vw, 2.5rem);
+		background: var(--diagram-paper);
+		color: var(--diagram-ink);
+		font-family: "Atkinson", sans-serif;
+	}
+	.prose :global(.evolution-heading) {
+		display: grid;
+		grid-template-columns: minmax(8rem, 0.65fr) 2fr;
+		align-items: end;
+		gap: 1.5rem;
+		padding-bottom: 1.4rem;
+		border-bottom: 1px solid var(--diagram-line);
+	}
+	.prose :global(.evolution-heading span) {
+		color: var(--signal);
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.11em;
+		text-transform: uppercase;
+	}
+	.prose :global(.evolution-heading strong) {
+		max-width: 31rem;
+		font-size: clamp(1.45rem, 2.6vw, 2.4rem);
+		font-weight: 700;
+		letter-spacing: -0.025em;
+		line-height: 1.05;
+	}
+	.prose :global(.evolution-track) {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 1.4rem minmax(0, 1fr) 1.4rem minmax(0, 1fr) 1.4rem minmax(0, 1fr);
+		gap: 0.4rem;
+		padding: 2rem 0 1.25rem;
+	}
+	.prose :global(.evolution-stage) {
+		position: relative;
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		margin: 0;
+		animation: stage-arrive 700ms both;
+	}
+	.prose :global(.evolution-stage:nth-of-type(2)) { animation-delay: 130ms; }
+	.prose :global(.evolution-stage:nth-of-type(3)) { animation-delay: 260ms; }
+	.prose :global(.evolution-stage:nth-of-type(4)) { animation-delay: 390ms; }
+	.prose :global(.stage-index) {
+		position: absolute;
+		top: 0.55rem;
+		left: 0.55rem;
+		z-index: 2;
+		padding: 0.22rem 0.34rem;
+		background: rgba(244, 244, 239, 0.9);
+		font-size: 0.61rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+	}
+	.prose :global(.stage-portrait) {
+		position: relative;
+		display: grid;
+		aspect-ratio: 4 / 5;
+		place-items: center;
+		overflow: hidden;
+		background: #d5d7d0;
+	}
+	.prose :global(.stage-portrait::after) {
+		position: absolute;
+		inset: 0;
+		border: 1px solid rgba(23, 25, 22, 0.12);
+		content: "";
+		pointer-events: none;
+	}
+	.prose :global(.stage-portrait img) {
+		display: block;
+		width: 100%;
+		height: 100%;
+		max-width: none;
+		margin: 0;
+		object-fit: cover;
+		transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+	.prose :global(.evolution-stage:hover .stage-portrait img) { transform: scale(1.035); }
+	.prose :global(.miku-stage .stage-portrait img) {
+		width: 84%;
+		height: 92%;
+		object-fit: contain;
+		object-position: center bottom;
+	}
+	.prose :global(.yuri-stage .stage-portrait img) { object-position: 56% center; }
+	.prose :global(.future-portrait) {
+		isolation: isolate;
+		background: #111813;
+	}
+	.prose :global(.future-portrait::before) {
+		position: absolute;
+		width: 72%;
+		aspect-ratio: 1;
+		border: 1px solid rgba(143, 229, 175, 0.45);
+		border-radius: 50%;
+		box-shadow: 0 0 4rem rgba(71, 201, 119, 0.22);
+		content: "";
+		animation: core-breathe 3.2s ease-in-out infinite;
+	}
+	.prose :global(.future-orbit) {
+		position: absolute;
+		width: 58%;
+		aspect-ratio: 1;
+		border: 1px dashed rgba(244, 244, 239, 0.45);
+		border-radius: 50%;
+		animation: orbit-turn 12s linear infinite;
+	}
+	.prose :global(.future-orbit::after) {
+		position: absolute;
+		top: -0.22rem;
+		left: 50%;
+		width: 0.45rem;
+		height: 0.45rem;
+		border-radius: 50%;
+		background: #8fe5af;
+		content: "";
+		box-shadow: 0 0 1rem #8fe5af;
+	}
+	.prose :global(.future-core) {
+		position: relative;
+		z-index: 1;
+		color: #f4f4ef;
+		font-size: clamp(2rem, 4vw, 3.3rem);
+		font-weight: 700;
+		letter-spacing: -0.07em;
+	}
+	.prose :global(.stage-era) {
+		margin: 1rem 0 0.45rem;
+		color: var(--signal);
+		font-size: 0.63rem;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	.prose :global(.evolution-stage h3) {
+		margin: 0 0 1rem;
+		font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+		line-height: 1.04;
+	}
+	.prose :global(.stage-gives),
+	.prose :global(.stage-missing) {
+		margin: 0 0 0.8rem;
+		font-size: 0.73rem;
+		line-height: 1.42;
+	}
+	.prose :global(.stage-gives span),
+	.prose :global(.stage-missing span) {
+		display: block;
+		margin-bottom: 0.15rem;
+		font-size: 0.58rem;
+		font-weight: 700;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+	}
+	.prose :global(.stage-missing) { color: #686b65; }
+	.prose :global(.capability-line) {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.2rem;
+		margin-top: auto;
+		padding-top: 0.65rem;
+	}
+	.prose :global(.capability-line i) {
+		height: 0.24rem;
+		background: rgba(23, 25, 22, 0.14);
+	}
+	.prose :global(.capability-line i.on) {
+		background: var(--signal);
+		animation: capability-on 650ms both;
+		animation-delay: 520ms;
+	}
+	.prose :global(.evolution-arrow) {
+		display: flex;
+		align-items: calc(20% + 1rem);
+		padding-top: 7rem;
+	}
+	.prose :global(.evolution-arrow span) {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 1px;
+		overflow: visible;
+		background: var(--diagram-line);
+	}
+	.prose :global(.evolution-arrow span::before) {
+		position: absolute;
+		top: -2px;
+		left: 0;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: var(--signal);
+		content: "";
+		animation: flow-right 2.4s ease-in-out infinite;
+	}
+	.prose :global(.evolution-arrow span::after) {
+		position: absolute;
+		top: -3px;
+		right: 0;
+		width: 6px;
+		height: 6px;
+		transform: rotate(45deg);
+		border-top: 1px solid var(--diagram-ink);
+		border-right: 1px solid var(--diagram-ink);
+		content: "";
+	}
+	.prose :global(.capability-key) {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.4rem;
+		margin: 0 0 1.35rem;
+		padding: 0.85rem 0;
+		border-top: 1px solid var(--diagram-line);
+		border-bottom: 1px solid var(--diagram-line);
+		font-size: 0.59rem;
+		letter-spacing: 0.05em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prose :global(.star-evolution figcaption) {
+		max-width: 48rem;
+		color: #5a5d57;
+		font-size: 0.72rem;
+		line-height: 1.5;
+	}
+	@keyframes stage-arrive {
+		from { opacity: 0; transform: translateY(0.8rem); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+	@keyframes capability-on {
+		from { transform: scaleX(0); transform-origin: left; }
+		to { transform: scaleX(1); transform-origin: left; }
+	}
+	@keyframes flow-right {
+		0% { opacity: 0; transform: translateX(0); }
+		25% { opacity: 1; }
+		75% { opacity: 1; }
+		100% { opacity: 0; transform: translateX(1.05rem); }
+	}
+	@keyframes orbit-turn { to { transform: rotate(360deg); } }
+	@keyframes core-breathe {
+		50% { transform: scale(1.05); border-color: rgba(143, 229, 175, 0.8); }
+	}
+	@supports (animation-timeline: view()) {
+		.prose :global(.evolution-stage) {
+			animation-timeline: view();
+			animation-range: entry 8% cover 32%;
+		}
+	}
 	.prose :global(.miku-context-grid) {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -429,6 +687,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			width: 100%;
 			margin-left: 0;
 		}
+		.prose :global(.star-evolution) {
+			width: 100%;
+			margin-left: 0;
+		}
+		.prose :global(.evolution-track) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 2rem 1rem;
+		}
+		.prose :global(.evolution-arrow) { display: none; }
 	}
 	@media (max-width: 600px) {
 		.article-header h1 {
@@ -450,6 +717,37 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		.prose :global(.miku-context-grid img) {
 			height: auto;
 			max-height: 30rem;
+		}
+		.prose :global(.star-evolution) {
+			padding: 1.15rem;
+		}
+		.prose :global(.evolution-heading),
+		.prose :global(.evolution-track) {
+			grid-template-columns: 1fr;
+		}
+		.prose :global(.evolution-heading) { gap: 0.65rem; }
+		.prose :global(.evolution-stage) {
+			display: grid;
+			grid-template-columns: 8rem 1fr;
+			column-gap: 1rem;
+		}
+		.prose :global(.stage-portrait) {
+			grid-row: 1 / span 5;
+			aspect-ratio: 4 / 5;
+		}
+		.prose :global(.stage-era) { margin-top: 0; }
+		.prose :global(.capability-key) {
+			font-size: 0.48rem;
+			letter-spacing: 0;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.prose :global(.evolution-stage),
+		.prose :global(.capability-line i.on),
+		.prose :global(.evolution-arrow span::before),
+		.prose :global(.future-orbit),
+		.prose :global(.future-portrait::before) {
+			animation: none;
 		}
 	}
 </style>
